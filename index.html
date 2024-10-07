@@ -1,14 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Delicias al Horno</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <header>
+        <h1>Delicias al Horno</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a Delicias al Horno</h2>
+            <img src="panaderia.jpg" alt="Productos de panadería">
+            <button id="comprarAhora">Comprar Ahora</button>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="producto" data-nombre="Pan de ajo" data-precio="1000">
+                <img src="pan_de_ajo.jpg" alt="Pan de ajo">
+                <h3>Pan de Ajo</h3>
+                <p>Delicioso pan de ajo recién horneado.</p>
+                <p>Precio: $1,000</p>
+                <button class="agregarCarrito">Agregar al Carrito</button>
+            </div>
+            <div class="producto" data-nombre="Pastel de chocolate" data-precio="2000">
+                <img src="pastel_chocolate.jpg" alt="Pastel de chocolate">
+                <h3>Pastel de Chocolate</h3>
+                <p>Suave pastel de chocolate con cobertura de ganache.</p>
+                <p>Precio: $2,000</p>
+                <button class="agregarCarrito">Agregar al Carrito</button>
+            </div>
+            <!-- Agrega más productos aquí -->
+        </section>
+
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="listaCarrito"></ul>
+            <button id="proceedCheckout">Proceder al Pago</button>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Teléfono: 123-456-789</p>
+            <p>Email: contacto@deliciasalhorno.com</p>
+            <form id="formContacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Delicias al Horno</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
